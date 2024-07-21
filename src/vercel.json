@@ -1,0 +1,13 @@
+{
+    "routes": [
+      {
+        "src": "/module1",
+        "dest": "/Module1/index.html"
+      },
+      {
+        "src": "/module2",
+        "dest": "/Module2/index.html"
+      }
+    ]
+  }
+  
