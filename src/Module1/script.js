@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 //Settings
  const Settings = {
     height : window.innerHeight ,
@@ -11,6 +11,8 @@ import * as THREE from 'three';
 const Scene  = new THREE.Scene();
 const RenderCam = new THREE.PerspectiveCamera(Settings.FOV, Settings.width/Settings.height);
 const Renderer = new THREE.WebGLRenderer({ canvas: document.querySelector('.webgl') });
+const controls = new OrbitControls( RenderCam, document.querySelector('.webgl'));
+controls.update();
 Renderer.setSize(Settings.width, Settings.height);
 RenderCam.position.z += 8;
 Scene.add(RenderCam);
