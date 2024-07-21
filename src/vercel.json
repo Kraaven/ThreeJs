@@ -2,7 +2,7 @@
     "routes": [
       {
         "src": "/module1",
-        "dest": "/Module1/index.html"
+        "dest": "/src/Module1/index.html"
       },
       {
         "src": "/module2",
